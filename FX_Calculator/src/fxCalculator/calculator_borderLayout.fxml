@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane stylesheets="@calculatorCSS.css" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxCalculator.CalculatorController">
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="80.0">
+         <children>
+            <TextField fx:id="input1TF" alignment="CENTER_RIGHT" promptText="Enter a Number" />
+            <Label text="    " />
+            <TextField fx:id="input2TF" alignment="CENTER_RIGHT" promptText="Enter a Number" />
+         </children>
+      </FlowPane>
+   </top>
+   <center>
+      <FlowPane alignment="CENTER" prefHeight="80.0">
+         <children>
+            <Button fx:id="addButton" onAction="#addNumbers" prefHeight="25.0" prefWidth="25.0" text="+" />
+            <Label text="  " />
+            <Button fx:id="subButton" onAction="#subNumbers" prefHeight="25.0" prefWidth="25.0" text="-" />
+            <Label text="  " />
+            <Button fx:id="multButton" onAction="#multNumbers" prefHeight="25.0" prefWidth="25.0" text="x" />
+            <Label text="  " />
+            <Button fx:id="divButton" onAction="#divNumbers" prefHeight="25.0" prefWidth="25.0" text="/" />
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER" prefHeight="80.0">
+         <children>
+            <TextField fx:id="resultTF" alignment="CENTER_RIGHT" editable="false" />
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>

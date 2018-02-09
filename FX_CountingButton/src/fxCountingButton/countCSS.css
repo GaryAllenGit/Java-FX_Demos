@@ -1,0 +1,13 @@
+.root {
+    -fx-background-color: blue;
+    -fx-foreground-colour: white;
+ }
+
+ .button {
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-background-color: red;
+    -fx-padding: 3 20 3 20;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+ }

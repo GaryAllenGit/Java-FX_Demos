@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="197.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/8.0.141"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxCalculator.CalculatorController"
+            stylesheets="/fxCalculator/calculatorCSS.css">
+   <children>
+      <TextField fx:id="input1TF" alignment="CENTER_RIGHT" layoutX="64.0" layoutY="47.0" promptText="Enter a Number" />
+      <TextField fx:id="input2TF" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="47.0" promptText="Enter a Number" />
+      <TextField fx:id="resultTF" alignment="CENTER_RIGHT" editable="false" layoutX="192.0" layoutY="161.0" />
+      <Button fx:id="addButton" layoutX="141.0" layoutY="100.0" mnemonicParsing="false" onAction="#addNumbers" text="+" />
+      <Button fx:id="subButton" layoutX="214.0" layoutY="100.0" mnemonicParsing="false" onAction="#subNumbers" text="-" />
+      <Button fx:id="multButton" layoutX="291.0" layoutY="100.0" mnemonicParsing="false" onAction="#multNumbers" text="x" />
+      <Button fx:id="divButton" layoutX="370.0" layoutY="100.0" mnemonicParsing="false" onAction="#divNumbers" text="/" />
+   </children>
+</AnchorPane>

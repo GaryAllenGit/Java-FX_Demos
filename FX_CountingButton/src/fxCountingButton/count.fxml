@@ -1,0 +1,9 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+
+<GridPane fx:controller="fxCountingButton.CountController"
+          stylesheets="/fxCountingButton/countCSS.css"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button text="1" onAction="#incrementCountOnButton" fx:id="countingButton"/>
+
+</GridPane>
