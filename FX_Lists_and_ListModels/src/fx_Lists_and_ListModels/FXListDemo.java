@@ -5,9 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -35,6 +33,9 @@ public class FXListDemo implements Initializable{
         int i = itemsList.getEditingIndex();
         if (i != -1) {
             listOfItems.remove(i);
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING, "No Item Selected", ButtonType.OK);
+            alert.showAndWait();
         }
     }
 
@@ -43,6 +44,9 @@ public class FXListDemo implements Initializable{
         if (!s.equals("")) {
             listOfItems.add(s);
             newItemTF.setText("");
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING, "No Value Entered", ButtonType.OK);
+            alert.showAndWait();
         }
     }
 }
