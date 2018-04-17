@@ -12,21 +12,21 @@ import javafx.stage.Modality;
 import javafx.stage.PopupWindow;
 import javafx.stage.Stage;
 
-public class PopUp1 extends PopupWindow{
+public class PopUp2 extends PopupWindow{
 
-    // This pop up window is modal
+    // This pop up window is non-modal
 
-    public PopUp1(Application parent) {
+    public PopUp2(Application parent) {
         final Stage dialog = new Stage();
 
-        dialog.initModality(Modality.APPLICATION_MODAL);
+        dialog.initModality(Modality.NONE);
 
         VBox dialogVbox = new VBox(20);
         dialogVbox.setAlignment(Pos.CENTER);
 
-        Text label = new Text("This is a Modal Dialog");
+        Text label = new Text("This is a Non-Modal Dialog");
 
-        Button btn = new Button("Close");
+        Button btn = new Button("Done");
         btn.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {

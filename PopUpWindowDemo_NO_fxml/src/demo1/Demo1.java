@@ -18,13 +18,24 @@ public class Demo1 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Open Dialog");
-        btn.setOnAction(
+        Button button1 = new Button();
+        button1.setText("Open Pop Up 1");
+        button1.setOnAction(
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
                         PopUp1 popup = new PopUp1(Demo1.this);
+                        popup.show(primaryStage);
+                    }
+                });
+
+        Button button2 = new Button();
+        button2.setText("Open Pop Up 2");
+        button2.setOnAction(
+                new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        PopUp2 popup = new PopUp2(Demo1.this);
                         popup.show(primaryStage);
                     }
                 });
@@ -35,7 +46,9 @@ public class Demo1 extends Application {
         grid.setVgap(10);
         grid.setPadding(new Insets(25, 25, 25, 25));
 
-        grid.add(btn,0,0);
+        grid.add(button1,0,0);
+        grid.add(button2,1,0);
+
 
         Scene scene = new Scene(grid, 300, 150);
         primaryStage.setScene(scene);
