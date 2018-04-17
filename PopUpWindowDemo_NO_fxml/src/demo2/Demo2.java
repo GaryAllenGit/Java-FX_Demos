@@ -1,4 +1,4 @@
-package demo1;
+package demo2;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -7,10 +7,15 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class Demo1 extends Application {
+import java.util.Optional;
+
+public class Demo2 extends Application {
+
+    private String textValue = "No value entered";
 
     public static void main(String[] args) {
         launch(args);
@@ -19,23 +24,30 @@ public class Demo1 extends Application {
     @Override
     public void start(Stage primaryStage) {
         Button button1 = new Button();
-        button1.setText("Open Pop Up 1");
+        button1.setText("Enter A String");
         button1.setOnAction(
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        PopUp1 popup = new PopUp1(Demo1.this);
-                        popup.show(primaryStage);
+                        TextInputDialog dialog = new TextInputDialog("Enter a value");
+
+                        dialog.setTitle("Get Text Input");
+                        dialog.setHeaderText("Enter some text");
+                        dialog.setContentText("Text:");
+
+                        Optional<String> inputValue = dialog.showAndWait();
+
+                        textValue = inputValue.orElse("undefined");
                     }
                 });
 
         Button button2 = new Button();
-        button2.setText("Open Pop Up 2");
+        button2.setText("Display the String");
         button2.setOnAction(
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        PopUp2 popup = new PopUp2(Demo1.this);
+                        ShowTextPopUp popup = new ShowTextPopUp(Demo2.this, textValue);
                         popup.show(primaryStage);
                     }
                 });
@@ -49,9 +61,10 @@ public class Demo1 extends Application {
         grid.add(button1,0,0);
         grid.add(button2,1,0);
 
-        Scene scene = new Scene(grid, 300, 150);
+
+        Scene scene = new Scene(grid, 350, 150);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Pop Up Window Demo 1");
+        primaryStage.setTitle("Pop Up Window Demo 2");
         primaryStage.show();
 
     }
