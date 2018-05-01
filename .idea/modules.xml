@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/FX_CountingButton/FX_CountingButton.iml" filepath="$PROJECT_DIR$/FX_CountingButton/FX_CountingButton.iml" />
       <module fileurl="file://$PROJECT_DIR$/FX_HelloWorld/FX_HelloWorld.iml" filepath="$PROJECT_DIR$/FX_HelloWorld/FX_HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/FX_Lists_and_ListModels/FX_Lists_and_ListModels.iml" filepath="$PROJECT_DIR$/FX_Lists_and_ListModels/FX_Lists_and_ListModels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FX_TableAndPieChart_NO_fxml/FX_TableAndPieChart_NO_fxml.iml" filepath="$PROJECT_DIR$/FX_TableAndPieChart_NO_fxml/FX_TableAndPieChart_NO_fxml.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorld_NO_fxml/HelloWorld_NO_fxml.iml" filepath="$PROJECT_DIR$/HelloWorld_NO_fxml/HelloWorld_NO_fxml.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFX_Tests.iml" filepath="$PROJECT_DIR$/JavaFX_Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/PopUpWindowDemo_NO_fxml/PopUpWindowDemo_NO_fxml.iml" filepath="$PROJECT_DIR$/PopUpWindowDemo_NO_fxml/PopUpWindowDemo_NO_fxml.iml" />
