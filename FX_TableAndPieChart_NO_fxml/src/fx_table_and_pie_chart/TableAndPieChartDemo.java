@@ -49,7 +49,10 @@ public class TableAndPieChartDemo extends Application {
         Scene scene = new Scene(new HBox(tv, chart));
 
         primaryStage.setScene(scene);
+<<<<<<< HEAD
         primaryStage.setTitle("JavaFX Table and Pie Chart Demo");
+=======
+>>>>>>> 7953fd867fa56b0cf8ea4ae7bc0b4bbffb5f86d8
         primaryStage.show();
     }
 
