@@ -1,4 +1,4 @@
-package helloExample;
+package fxHelloExample;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;

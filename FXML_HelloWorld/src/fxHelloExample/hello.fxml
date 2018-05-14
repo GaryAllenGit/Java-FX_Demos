@@ -2,8 +2,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<GridPane fx:controller="helloExample.HelloController"
-          stylesheets="/helloExample/helloCSS.css"
+<GridPane fx:controller="fxHelloExample.HelloController"
+          stylesheets="/fxHelloExample/helloCSS.css"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <Button text="Say 'Hello World'" onAction="#sayHelloWorld"/>
     <Label GridPane.rowIndex="1" fx:id="helloWorld"/>
