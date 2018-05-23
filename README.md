@@ -12,12 +12,15 @@ Projects named JavaFX_xxx are written 'long hand' coding with the Java FX classe
 Currently there is:
 
 	a classic HelloWorld (java fx),
+	a calculator (java fx),
 	a set of pop-up window demos of varying complexity (java fx),
+	a Table and Pie Chart demo (java fx) (
+	    heavily based upon one found online at https://stackoverflow.com/questions/23964885/binding-chart-to-tableview-javafx),
+    a MenuDemo that shows off menus and a range of components (java fx),
 	a HelloWorld created with scene builder and xfml,
 	a CountingButton created with scene builder and xfml,
-	a (pretty poor) Calculator created with scene builder and xfml,
+	a Calculator created with scene builder and xfml,
 	a Collections demo using the ListView and ObservableList classes, created with scene builder and xfml.
-	a Table and Pie Chart demo (java fx) heavily based upon one found online at https://stackoverflow.com/questions/23964885/binding-chart-to-tableview-javafx
 
 These may all be updated over time, and other demos may be added.
 
