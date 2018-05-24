@@ -30,7 +30,7 @@ public class FXListDemo implements Initializable{
     }
 
     public void removeItem(ActionEvent actionEvent) {
-        int i = itemsList.getEditingIndex();
+        int i = itemsList.getSelectionModel().getSelectedIndex();
         if (i != -1) {
             listOfItems.remove(i);
         } else {
