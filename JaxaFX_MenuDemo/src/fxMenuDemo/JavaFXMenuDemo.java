@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
 
@@ -73,7 +74,9 @@ public class JavaFXMenuDemo extends Application {
             @Override
             public void handle(ActionEvent event) {
                 ExampleDialog dialog = new ExampleDialog();
-                dialog.show(primaryStage);
+                dialog.initModality(Modality.APPLICATION_MODAL);
+                dialog.initOwner(primaryStage);
+                dialog.show();
             }
         });
 

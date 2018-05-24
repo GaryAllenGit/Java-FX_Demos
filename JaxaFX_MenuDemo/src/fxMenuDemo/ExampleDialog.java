@@ -8,14 +8,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
-import javafx.stage.PopupWindow;
 import javafx.stage.Stage;
 
-class ExampleDialog extends PopupWindow {
+class ExampleDialog extends Stage {
     // A class to demonstrate both custom dialogs and a range of JavaFX components
-
-    private final Stage thisDialog = new Stage();
 
     private HBox makeSelectionBox;
     private HBox showSelectionBox;
@@ -70,14 +66,14 @@ class ExampleDialog extends PopupWindow {
         okButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                thisDialog.close();
+                ExampleDialog.this.close();
             }
         });
 
         cancelButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                thisDialog.close();
+                ExampleDialog.this.close();
             }
         });
 
@@ -92,9 +88,8 @@ class ExampleDialog extends PopupWindow {
 
         // add the VBox to a scene, then add the scene to the stage
         Scene dialogScene = new Scene(dialogBox, 375, 150);
-        thisDialog.setScene(dialogScene);
-        thisDialog.initModality(Modality.APPLICATION_MODAL);
-        thisDialog.show();
+
+        this.setScene(dialogScene);
     }
 
     private void doSelectionUpdate() {

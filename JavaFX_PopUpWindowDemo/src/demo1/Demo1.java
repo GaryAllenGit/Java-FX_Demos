@@ -24,8 +24,8 @@ public class Demo1 extends Application {
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        PopUp1 popup = new PopUp1(Demo1.this);
-                        popup.show(primaryStage);
+                        PopUp1 popup = new PopUp1();
+                        popup.show();
                     }
                 });
 
@@ -35,8 +35,8 @@ public class Demo1 extends Application {
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        PopUp2 popup = new PopUp2(Demo1.this);
-                        popup.show(primaryStage);
+                        PopUp2 popup = new PopUp2();
+                        popup.show();
                     }
                 });
 

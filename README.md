@@ -14,8 +14,9 @@ Currently there is:
 	a classic HelloWorld (java fx),
 	a calculator (java fx),
 	a set of pop-up window demos of varying complexity (java fx),
-	a Table and Pie Chart demo (java fx) (
-	    heavily based upon one found online at https://stackoverflow.com/questions/23964885/binding-chart-to-tableview-javafx),
+	a Table and Pie Chart demo (java fx) 
+	    (heavily based upon one found online at:
+	    https://stackoverflow.com/questions/23964885/binding-chart-to-tableview-javafx),
     a MenuDemo that shows off menus and a range of components (java fx),
 	a HelloWorld created with scene builder and xfml,
 	a CountingButton created with scene builder and xfml,

@@ -10,15 +10,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
-import javafx.stage.PopupWindow;
 import javafx.stage.Stage;
 
-public class EnterDetailsPopUp extends PopupWindow {
+public class EnterDetailsPopUp extends Stage {
 
     public EnterDetailsPopUp(Demo3 parent) {
-        final Stage dialog = new Stage();
 
-        dialog.initModality(Modality.APPLICATION_MODAL);
+        this.initModality(Modality.APPLICATION_MODAL);
 
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.CENTER);
@@ -45,7 +43,7 @@ public class EnterDetailsPopUp extends PopupWindow {
                 String sn = surnameTF.getText();
                 String dept = deptTF.getText();
                 parent.setEmployee(id, fn, sn, dept);
-                dialog.close();
+                EnterDetailsPopUp.this.close();
             }
         });
 
@@ -60,7 +58,6 @@ public class EnterDetailsPopUp extends PopupWindow {
         grid.add(btn,0,4);
 
         Scene dialogScene = new Scene(grid, 375,200);
-        dialog.setScene(dialogScene);
-        dialog.show();
+        this.setScene(dialogScene);
     }
 }

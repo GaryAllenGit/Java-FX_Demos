@@ -47,8 +47,8 @@ public class Demo2 extends Application {
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        ShowTextPopUp popup = new ShowTextPopUp(Demo2.this, textValue);
-                        popup.show(primaryStage);
+                        ShowTextPopUp popup = new ShowTextPopUp(textValue);
+                        popup.show();
                     }
                 });
 
@@ -60,7 +60,6 @@ public class Demo2 extends Application {
 
         grid.add(button1,0,0);
         grid.add(button2,1,0);
-
 
         Scene scene = new Scene(grid, 350, 150);
         primaryStage.setScene(scene);
