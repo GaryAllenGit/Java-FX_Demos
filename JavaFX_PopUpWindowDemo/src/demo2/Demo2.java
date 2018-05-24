@@ -48,6 +48,7 @@ public class Demo2 extends Application {
                     @Override
                     public void handle(ActionEvent event) {
                         ShowTextPopUp popup = new ShowTextPopUp(textValue);
+                        popup.initOwner(primaryStage);
                         popup.show();
                     }
                 });

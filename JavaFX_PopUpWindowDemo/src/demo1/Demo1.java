@@ -25,6 +25,7 @@ public class Demo1 extends Application {
                     @Override
                     public void handle(ActionEvent event) {
                         PopUp1 popup = new PopUp1();
+                        popup.initOwner(primaryStage);
                         popup.show();
                     }
                 });
@@ -36,6 +37,7 @@ public class Demo1 extends Application {
                     @Override
                     public void handle(ActionEvent event) {
                         PopUp2 popup = new PopUp2();
+                        popup.initOwner(primaryStage);
                         popup.show();
                     }
                 });

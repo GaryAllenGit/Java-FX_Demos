@@ -29,6 +29,7 @@ public class Demo3 extends Application {
                     @Override
                     public void handle(ActionEvent event) {
                         EnterDetailsPopUp popup = new EnterDetailsPopUp(Demo3.this);
+                        popup.initOwner(primaryStage);
                         popup.show();
                     }
                 });
