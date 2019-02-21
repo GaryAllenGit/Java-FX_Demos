@@ -21,7 +21,8 @@ Currently there is:
 	a HelloWorld created with scene builder and xfml,
 	a CountingButton created with scene builder and xfml,
 	a Calculator created with scene builder and xfml,
-	a Collections demo using the ListView and ObservableList classes, created with scene builder and xfml.
+	a Collections demo using the ListView and ObservableList classes, created with scene builder and xfml,
+	an 'Active Interface' demo to show off how to show/hide and enable/disable components at run time.
 
 These may all be updated over time, and other demos may be added.
 
