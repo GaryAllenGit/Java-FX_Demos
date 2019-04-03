@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaFX_HelloWorld/JavaFX_HelloWorld.iml" filepath="$PROJECT_DIR$/JavaFX_HelloWorld/JavaFX_HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFX_PopUpWindowDemo/JavaFX_PopUpWindowDemo.iml" filepath="$PROJECT_DIR$/JavaFX_PopUpWindowDemo/JavaFX_PopUpWindowDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFX_TableAndPieChart/JavaFX_TableAndPieChart.iml" filepath="$PROJECT_DIR$/JavaFX_TableAndPieChart/JavaFX_TableAndPieChart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFX_TableView_StaffList/JavaFX_TableView_StaffList.iml" filepath="$PROJECT_DIR$/JavaFX_TableView_StaffList/JavaFX_TableView_StaffList.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFX_Tests.iml" filepath="$PROJECT_DIR$/JavaFX_Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/JaxaFX_MenuDemo/JaxaFX_MenuDemo.iml" filepath="$PROJECT_DIR$/JaxaFX_MenuDemo/JaxaFX_MenuDemo.iml" />
     </modules>

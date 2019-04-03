@@ -14,6 +14,7 @@ Currently there is:
 	a classic HelloWorld (java fx),
 	a calculator (java fx),
 	a set of pop-up window demos of varying complexity (java fx),
+	a TableView demo to show how to display, edit, and add to data in a table (java fx),
 	a Table and Pie Chart demo (java fx) 
 	    (heavily based upon one found online at:
 	    https://stackoverflow.com/questions/23964885/binding-chart-to-tableview-javafx),
