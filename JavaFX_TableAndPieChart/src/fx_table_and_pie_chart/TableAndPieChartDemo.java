@@ -33,13 +33,13 @@ public class TableAndPieChartDemo extends Application {
         TableView tv = new TableView<>(emailData);
         tv.setEditable(true);
 
-        TableColumn column1  = new TableColumn("Day");
+        TableColumn<PieChart.Data, String> column1  = new TableColumn<>("Day");
         column1.setPrefWidth(120);
         column1.setCellValueFactory(new PropertyValueFactory("name"));
         column1.setCellFactory(TextFieldTableCell.forTableColumn());
         column1.setEditable(false);
 
-        TableColumn column2 = new TableColumn("No. of Emails");
+        TableColumn<PieChart.Data, Number> column2 = new TableColumn<>("No. of Emails");
         column2.setPrefWidth(120);
         column2.setCellValueFactory(new PropertyValueFactory("pieValue"));
         column2.setCellFactory(TextFieldTableCell.forTableColumn(new NumberStringConverter()));

@@ -47,10 +47,10 @@ public class TableView_StaffList extends Application {
         // The TableView itself
         staffTable.setEditable(true);
 
-        TableColumn idColumn = new TableColumn("ID");
+        TableColumn<Employee, String> idColumn = new TableColumn<>("ID");
         idColumn.setMinWidth(60);
         idColumn.setCellValueFactory(
-            new PropertyValueFactory<Employee, String>("ID"));
+            new PropertyValueFactory<>("ID"));
         idColumn.setCellFactory(TextFieldTableCell.forTableColumn());
         idColumn.setOnEditCommit(
                 new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
@@ -63,10 +63,10 @@ public class TableView_StaffList extends Application {
                 }
         );
 
-        TableColumn surnameColumn = new TableColumn("Surname");
+        TableColumn<Employee, String> surnameColumn = new TableColumn<>("Surname");
         surnameColumn.setMinWidth(120);
         surnameColumn.setCellValueFactory(
-            new PropertyValueFactory<Employee, String>("surname"));
+            new PropertyValueFactory<>("surname"));
         surnameColumn.setCellFactory(TextFieldTableCell.forTableColumn());
         surnameColumn.setOnEditCommit(
                 new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
@@ -79,11 +79,11 @@ public class TableView_StaffList extends Application {
                 }
         );
 
-        TableColumn firstnameColumn = new TableColumn("First Name");
+        TableColumn<Employee, String> firstnameColumn = new TableColumn<>("First Name");
         firstnameColumn.setMinWidth(120);
         firstnameColumn.setSortable(false);
         firstnameColumn.setCellValueFactory(
-            new PropertyValueFactory<Employee, String>("firstname"));
+            new PropertyValueFactory<>("firstname"));
         firstnameColumn.setCellFactory(TextFieldTableCell.forTableColumn());
         firstnameColumn.setOnEditCommit(
                 new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
@@ -96,10 +96,10 @@ public class TableView_StaffList extends Application {
                 }
         );
 
-        TableColumn departmentColumn = new TableColumn("Department");
+        TableColumn<Employee, String> departmentColumn = new TableColumn<>("Department");
         departmentColumn.setMinWidth(110);
         departmentColumn.setCellValueFactory(
-            new PropertyValueFactory<Employee, String>("department"));
+            new PropertyValueFactory<>("department"));
         departmentColumn.setCellFactory(TextFieldTableCell.forTableColumn());
         departmentColumn.setOnEditCommit(
                 new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
