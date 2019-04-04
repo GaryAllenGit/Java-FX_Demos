@@ -47,21 +47,13 @@ public class TableView_StaffList extends Application {
         // The TableView itself
         staffTable.setEditable(true);
 
+        // The columns of the table.  ID is not editable, but the other columns are
         TableColumn<Employee, String> idColumn = new TableColumn<>("ID");
         idColumn.setMinWidth(60);
         idColumn.setCellValueFactory(
             new PropertyValueFactory<>("ID"));
         idColumn.setCellFactory(TextFieldTableCell.forTableColumn());
-        idColumn.setOnEditCommit(
-                new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
-                    @Override
-                    public void handle(TableColumn.CellEditEvent<Employee, String> t) {
-                        int selectedRow = t.getTablePosition().getRow();
-                        Employee selectedEmp = t.getTableView().getItems().get(selectedRow);
-                        selectedEmp.setID(t.getNewValue());
-                    }
-                }
-        );
+        idColumn.setEditable(false);
 
         TableColumn<Employee, String> surnameColumn = new TableColumn<>("Surname");
         surnameColumn.setMinWidth(120);
