@@ -19,6 +19,7 @@ Currently there is:
 	    (heavily based upon one found online at:
 	    https://stackoverflow.com/questions/23964885/binding-chart-to-tableview-javafx),
     a MenuDemo that shows off menus and a range of components (java fx),
+    a CSS Theme switching demo, which changes the theme dynamically at run time,
 	a HelloWorld created with scene builder and xfml,
 	a CountingButton created with scene builder and xfml,
 	a Calculator created with scene builder and xfml,
