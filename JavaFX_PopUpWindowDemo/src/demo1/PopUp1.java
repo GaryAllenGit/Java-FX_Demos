@@ -10,11 +10,11 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class PopUp1 extends Stage{
+class PopUp1 extends Stage{
 
     // This pop up window is modal
 
-    public PopUp1() {
+    PopUp1() {
 
         this.initModality(Modality.APPLICATION_MODAL);
 
@@ -24,12 +24,12 @@ public class PopUp1 extends Stage{
         Text label = new Text("This is a Modal Dialog");
 
         Button btn = new Button("Close");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        PopUp1.this.close();
-                    }
-                });
+        btn.setOnAction(new EventHandler<>() {
+            @Override
+            public void handle(ActionEvent event) {
+                PopUp1.this.close();
+            }
+        });
 
         dialogVbox.getChildren().add(label);
         dialogVbox.getChildren().add(btn);

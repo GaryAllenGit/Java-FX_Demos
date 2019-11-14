@@ -10,8 +10,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("calculator_borderLayout.fxml"));
-        // Parent root = FXMLLoader.load(getClass().getResource("calculator.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("calculator_borderLayout.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("calculator.fxml"));
         primaryStage.setTitle("JavaFX Calculator Demo");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

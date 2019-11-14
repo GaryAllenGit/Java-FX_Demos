@@ -25,7 +25,7 @@ public class Demo3 extends Application {
         Button button1 = new Button();
         button1.setText("Enter Details");
         button1.setOnAction(
-                new EventHandler<ActionEvent>() {
+                new EventHandler<>() {
                     @Override
                     public void handle(ActionEvent event) {
                         EnterDetailsPopUp popup = new EnterDetailsPopUp(Demo3.this);
@@ -37,11 +37,11 @@ public class Demo3 extends Application {
         Button button2 = new Button();
         button2.setText("Display Details");
         button2.setOnAction(
-                new EventHandler<ActionEvent>() {
+                new EventHandler<>() {
                     @Override
                     public void handle(ActionEvent event) {
                         Alert showOutputAlert = new Alert(Alert.AlertType.INFORMATION,
-                                "Employee = "+ emp, ButtonType.OK);
+                                "Employee = " + emp, ButtonType.OK);
                         showOutputAlert.showAndWait();
                     }
                 });

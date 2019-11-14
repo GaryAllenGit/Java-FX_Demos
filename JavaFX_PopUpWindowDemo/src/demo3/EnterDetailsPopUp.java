@@ -12,9 +12,9 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class EnterDetailsPopUp extends Stage {
+class EnterDetailsPopUp extends Stage {
 
-    public EnterDetailsPopUp(Demo3 parent) {
+    EnterDetailsPopUp(Demo3 parent) {
 
         this.initModality(Modality.APPLICATION_MODAL);
 
@@ -35,7 +35,7 @@ public class EnterDetailsPopUp extends Stage {
         TextField idTF = new TextField();
 
         Button btn = new Button("Done");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+        btn.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 String id = idTF.getText();

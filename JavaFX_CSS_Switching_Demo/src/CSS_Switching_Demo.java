@@ -28,7 +28,7 @@ public class CSS_Switching_Demo extends Application {
         // Create three buttons to control the themes
         final Button button1 = new Button("No Theme (Default)");
         button1.getStyleClass().add("buttonStyle");
-        button1.setOnAction(new EventHandler<ActionEvent>() {
+        button1.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 scene.getStylesheets().removeAll(theme1Url, theme2Url);
@@ -37,11 +37,11 @@ public class CSS_Switching_Demo extends Application {
 
         final Button button2 = new Button("Load Theme 1");
         button2.getStyleClass().add("buttonStyle");
-        button2.setOnAction(new EventHandler<ActionEvent>() {
+        button2.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 scene.getStylesheets().remove(theme2Url);
-                if(!scene.getStylesheets().contains(theme1Url)) {
+                if (!scene.getStylesheets().contains(theme1Url)) {
                     scene.getStylesheets().add(theme1Url);
                 }
             }
@@ -49,11 +49,11 @@ public class CSS_Switching_Demo extends Application {
 
         final Button button3 = new Button("Load Theme 2");
         button3.getStyleClass().add("buttonStyle");
-        button3.setOnAction(new EventHandler<ActionEvent>() {
+        button3.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 scene.getStylesheets().remove(theme1Url);
-                if(!scene.getStylesheets().contains(theme2Url)){
+                if (!scene.getStylesheets().contains(theme2Url)) {
                     scene.getStylesheets().add(theme2Url);
                 }
             }

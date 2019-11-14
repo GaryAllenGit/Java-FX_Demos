@@ -10,11 +10,11 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class PopUp2 extends Stage{
+class PopUp2 extends Stage{
 
     // This pop up window is non-modal
 
-    public PopUp2() {
+    PopUp2() {
 
         this.initModality(Modality.NONE);
 
@@ -24,12 +24,12 @@ public class PopUp2 extends Stage{
         Text label = new Text("This is a Non-Modal Dialog");
 
         Button btn = new Button("Done");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        PopUp2.this.close();
-                    }
-                });
+        btn.setOnAction(new EventHandler<>() {
+            @Override
+            public void handle(ActionEvent event) {
+                PopUp2.this.close();
+            }
+        });
 
         dialogVbox.getChildren().add(label);
         dialogVbox.getChildren().add(btn);

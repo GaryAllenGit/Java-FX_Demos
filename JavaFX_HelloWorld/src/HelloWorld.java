@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class HelloWorld extends Application {
@@ -24,7 +23,7 @@ public class HelloWorld extends Application {
 
         Button helloButton = new Button();
         helloButton.setText("Say 'Hello World'");
-        helloButton.setOnAction(new EventHandler<ActionEvent>() {
+        helloButton.setOnAction(new EventHandler<>() {
 
             @Override
             public void handle(ActionEvent event) {

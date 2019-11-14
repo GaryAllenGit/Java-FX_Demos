@@ -12,16 +12,6 @@ import javafx.scene.control.*;
 public class JavaFXMenuDemo extends Application {
     // A class to demo JavaFX menus, information alerts, and custom dialogs
 
-    private MenuBar menuBar;
-
-    private Menu fileMenu;
-    private Menu helpMenu;
-
-    private MenuItem factoryPopUpMI;
-    private MenuItem myDialogMI;
-    private MenuItem exitMI;
-    private MenuItem aboutMI;
-
 
     public static void main(String[] args) {
         launch(args);
@@ -30,15 +20,15 @@ public class JavaFXMenuDemo extends Application {
     @Override
     public void start(Stage primaryStage) {
         // initialise all the GUI components
-        menuBar = new MenuBar();
+        MenuBar menuBar = new MenuBar();
 
-        fileMenu = new Menu("File");
-        helpMenu = new Menu("Help");
+        Menu fileMenu = new Menu("File");
+        Menu helpMenu = new Menu("Help");
 
-        factoryPopUpMI = new MenuItem("Factory PopUp...");
-        myDialogMI = new MenuItem("Custom Dialog Box");
-        exitMI = new MenuItem("Exit");
-        aboutMI = new MenuItem("About...");
+        MenuItem factoryPopUpMI = new MenuItem("Factory PopUp...");
+        MenuItem myDialogMI = new MenuItem("Custom Dialog Box");
+        MenuItem exitMI = new MenuItem("Exit");
+        MenuItem aboutMI = new MenuItem("About...");
 
         // add menu items to menus and menus to the menu bar
         fileMenu.getItems().add(factoryPopUpMI);
@@ -52,14 +42,14 @@ public class JavaFXMenuDemo extends Application {
 
 
         // add listeners to the menu items to make things happen
-        exitMI.setOnAction(new EventHandler<ActionEvent>() {
+        exitMI.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 System.exit(0);
             }
         });
 
-        factoryPopUpMI.setOnAction(new EventHandler<ActionEvent>() {
+        factoryPopUpMI.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 Alert factoryAlert = new Alert(Alert.AlertType.INFORMATION);
@@ -70,7 +60,7 @@ public class JavaFXMenuDemo extends Application {
             }
         });
 
-        myDialogMI.setOnAction(new EventHandler<ActionEvent>() {
+        myDialogMI.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 ExampleDialog dialog = new ExampleDialog();

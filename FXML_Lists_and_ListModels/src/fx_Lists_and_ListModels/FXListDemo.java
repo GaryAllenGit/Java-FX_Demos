@@ -2,7 +2,6 @@ package fx_Lists_and_ListModels;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -29,7 +28,7 @@ public class FXListDemo implements Initializable{
         itemsList.setItems(listOfItems);
     }
 
-    public void removeItem(ActionEvent actionEvent) {
+    public void removeItem() {
         int i = itemsList.getSelectionModel().getSelectedIndex();
         if (i != -1) {
             listOfItems.remove(i);
@@ -39,7 +38,7 @@ public class FXListDemo implements Initializable{
         }
     }
 
-    public void addItem(ActionEvent actionEvent) {
+    public void addItem() {
         String s = newItemTF.getText();
         if (!s.equals("")) {
             listOfItems.add(s);

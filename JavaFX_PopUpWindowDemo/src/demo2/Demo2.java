@@ -26,7 +26,7 @@ public class Demo2 extends Application {
         Button button1 = new Button();
         button1.setText("Enter A String");
         button1.setOnAction(
-                new EventHandler<ActionEvent>() {
+                new EventHandler<>() {
                     @Override
                     public void handle(ActionEvent event) {
                         TextInputDialog dialog = new TextInputDialog("Enter a value");
@@ -44,7 +44,7 @@ public class Demo2 extends Application {
         Button button2 = new Button();
         button2.setText("Display the String");
         button2.setOnAction(
-                new EventHandler<ActionEvent>() {
+                new EventHandler<>() {
                     @Override
                     public void handle(ActionEvent event) {
                         ShowTextPopUp popup = new ShowTextPopUp(textValue);

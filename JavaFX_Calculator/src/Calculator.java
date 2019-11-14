@@ -64,28 +64,28 @@ public class Calculator extends Application {
 
 
         // add listeners to the buttons
-        addButton.setOnAction(new EventHandler<ActionEvent>() {
+        addButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 addNumbers(input1TF, input2TF, resultTF);
             }
         });
 
-        subButton.setOnAction(new EventHandler<ActionEvent>() {
+        subButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 subtractNumbers(input1TF, input2TF, resultTF);
             }
         });
 
-        multButton.setOnAction(new EventHandler<ActionEvent>() {
+        multButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 multiplyNumbers(input1TF, input2TF, resultTF);
             }
         });
 
-        divButton.setOnAction(new EventHandler<ActionEvent>() {
+        divButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 divideNumbers(input1TF, input2TF, resultTF);
@@ -111,8 +111,8 @@ public class Calculator extends Application {
 
     private void addNumbers(TextField input1TF, TextField input2TF, TextField resultTF) {
         try {
-            double d1 = new Double(input1TF.getText());
-            double d2 = new Double(input2TF.getText());
+            double d1 = Double.parseDouble(input1TF.getText());
+            double d2 = Double.parseDouble(input2TF.getText());
 
             double result = d1 + d2;
 
@@ -124,8 +124,8 @@ public class Calculator extends Application {
 
     private void subtractNumbers(TextField input1TF, TextField input2TF, TextField resultTF) {
         try {
-            double d1 = new Double(input1TF.getText());
-            double d2 = new Double(input2TF.getText());
+            double d1 = Double.parseDouble(input1TF.getText());
+            double d2 = Double.parseDouble(input2TF.getText());
 
             double result = d1 - d2;
 
@@ -137,8 +137,8 @@ public class Calculator extends Application {
 
     private void multiplyNumbers(TextField input1TF, TextField input2TF, TextField resultTF) {
         try {
-            double d1 = new Double(input1TF.getText());
-            double d2 = new Double(input2TF.getText());
+            double d1 = Double.parseDouble(input1TF.getText());
+            double d2 = Double.parseDouble(input2TF.getText());
 
             double result = d1 * d2;
 
@@ -150,8 +150,8 @@ public class Calculator extends Application {
 
     private void divideNumbers(TextField input1TF, TextField input2TF, TextField resultTF) {
         try {
-            double d1 = new Double(input1TF.getText());
-            double d2 = new Double(input2TF.getText());
+            double d1 = Double.parseDouble(input1TF.getText());
+            double d2 = Double.parseDouble(input2TF.getText());
 
             double result = d1 / d2;
 

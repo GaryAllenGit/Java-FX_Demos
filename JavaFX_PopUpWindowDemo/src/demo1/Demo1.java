@@ -21,7 +21,7 @@ public class Demo1 extends Application {
         Button button1 = new Button();
         button1.setText("Open Pop Up 1");
         button1.setOnAction(
-                new EventHandler<ActionEvent>() {
+                new EventHandler<>() {
                     @Override
                     public void handle(ActionEvent event) {
                         PopUp1 popup = new PopUp1();
@@ -33,7 +33,7 @@ public class Demo1 extends Application {
         Button button2 = new Button();
         button2.setText("Open Pop Up 2");
         button2.setOnAction(
-                new EventHandler<ActionEvent>() {
+                new EventHandler<>() {
                     @Override
                     public void handle(ActionEvent event) {
                         PopUp2 popup = new PopUp2();

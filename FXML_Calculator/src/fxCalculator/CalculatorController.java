@@ -1,6 +1,5 @@
 package fxCalculator;
 
-import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -14,10 +13,10 @@ public class CalculatorController {
     public Button multButton;
     public Button divButton;
 
-    public void addNumbers(ActionEvent actionEvent) {
+    public void addNumbers() {
         try {
-            double d1 = new Double(input1TF.getText());
-            double d2 = new Double(input2TF.getText());
+            double d1 = Double.parseDouble(input1TF.getText());
+            double d2 = Double.parseDouble(input2TF.getText());
 
             double result = d1 + d2;
 
@@ -27,10 +26,10 @@ public class CalculatorController {
         }
     }
 
-    public void subNumbers(ActionEvent actionEvent) {
+    public void subNumbers() {
         try {
-            double d1 = new Double(input1TF.getText());
-            double d2 = new Double(input2TF.getText());
+            double d1 = Double.parseDouble(input1TF.getText());
+            double d2 = Double.parseDouble(input2TF.getText());
 
             double result = d1 - d2;
 
@@ -40,10 +39,10 @@ public class CalculatorController {
         }
     }
 
-    public void multNumbers(ActionEvent actionEvent) {
+    public void multNumbers() {
         try {
-            double d1 = new Double(input1TF.getText());
-            double d2 = new Double(input2TF.getText());
+            double d1 = Double.parseDouble(input1TF.getText());
+            double d2 = Double.parseDouble(input2TF.getText());
 
             double result = d1 * d2;
 
@@ -53,10 +52,10 @@ public class CalculatorController {
         }
     }
 
-    public void divNumbers(ActionEvent actionEvent) {
+    public void divNumbers() {
         try {
-            double d1 = new Double(input1TF.getText());
-            double d2 = new Double(input2TF.getText());
+            double d1 = Double.parseDouble(input1TF.getText());
+            double d2 = Double.parseDouble(input2TF.getText());
 
             double result = d1 / d2;
 

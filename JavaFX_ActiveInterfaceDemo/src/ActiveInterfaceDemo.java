@@ -1,6 +1,4 @@
 import javafx.application.Application;
-import javafx.collections.ObservableArray;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -49,7 +47,7 @@ public class ActiveInterfaceDemo extends Application {
         middleBox.setPadding(new Insets(10, 10, 10, 10));
         middleBox.setSpacing(20);
 
-        ComboBox<String> combo = new ComboBox<String>();
+        ComboBox<String> combo = new ComboBox<>();
         combo.setPromptText("Pick One...");
         combo.getItems().addAll("Start Again", "Go To End");
         combo.setVisible(false);
@@ -75,7 +73,7 @@ public class ActiveInterfaceDemo extends Application {
 
 
         // add the action listeners to the buttons and the combo box
-        button1.setOnAction(new EventHandler<ActionEvent>() {
+        button1.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 button1.setDisable(true);
@@ -83,7 +81,7 @@ public class ActiveInterfaceDemo extends Application {
             }
         });
 
-        button2.setOnAction(new EventHandler<ActionEvent>() {
+        button2.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 button2.setDisable(true);
@@ -91,7 +89,7 @@ public class ActiveInterfaceDemo extends Application {
             }
         });
 
-        button3.setOnAction(new EventHandler<ActionEvent>() {
+        button3.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 button3.setDisable(true);
@@ -100,11 +98,11 @@ public class ActiveInterfaceDemo extends Application {
             }
         });
 
-        button4.setOnAction(new EventHandler<ActionEvent>() {
+        button4.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 String selectedString = combo.getValue();
-                if (selectedString.equals("Start Again")){
+                if (selectedString.equals("Start Again")) {
                     button1.setDisable(false);
                     combo.setValue(null);
                     combo.setVisible(false);
@@ -117,7 +115,7 @@ public class ActiveInterfaceDemo extends Application {
             }
         });
 
-        doneButton.setOnAction(new EventHandler<ActionEvent>() {
+        doneButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 System.exit(0);

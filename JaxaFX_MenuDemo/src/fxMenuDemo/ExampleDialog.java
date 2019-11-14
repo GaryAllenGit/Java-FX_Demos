@@ -13,34 +13,27 @@ import javafx.stage.Stage;
 class ExampleDialog extends Stage {
     // A class to demonstrate both custom dialogs and a range of JavaFX components
 
-    private HBox makeSelectionBox;
-    private HBox showSelectionBox;
-    private HBox buttonsBox;
-
-    private Label selectionLabel;
     private ComboBox<String> selectionCombo;
     private CheckBox showResultsCheckBox;
     private TextField resultTextField;
-    private Button okButton;
-    private Button cancelButton;
 
-    public ExampleDialog(){
+    ExampleDialog(){
         // initialise all the components
-        makeSelectionBox = new HBox();
+        HBox makeSelectionBox = new HBox();
         makeSelectionBox.setSpacing(25);
         makeSelectionBox.setPadding(new Insets(10));
         makeSelectionBox.setAlignment(Pos.CENTER);
 
-        showSelectionBox = new HBox();
+        HBox showSelectionBox = new HBox();
         showSelectionBox.setSpacing(25);
         showSelectionBox.setPadding(new Insets(15));
 
-        buttonsBox = new HBox();
+        HBox buttonsBox = new HBox();
         buttonsBox.setSpacing(30);
         buttonsBox.setPadding(new Insets(10));
         buttonsBox.setAlignment(Pos.CENTER);
 
-        selectionLabel = new Label("Select Item");
+        Label selectionLabel = new Label("Select Item");
 
         selectionCombo = new ComboBox<>();
         selectionCombo.getItems().addAll("Apples", "Pears", "Plums", "Grapes");
@@ -50,27 +43,27 @@ class ExampleDialog extends Stage {
 
         resultTextField = new TextField("No Selection Made");
 
-        okButton = new Button("OK");
+        Button okButton = new Button("OK");
 
-        cancelButton = new Button("Cancel");
+        Button cancelButton = new Button("Cancel");
 
 
         // add action listeners to the combo box and buttons
-        selectionCombo.setOnAction(new EventHandler<ActionEvent>() {
+        selectionCombo.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 doSelectionUpdate();
             }
         });
 
-        okButton.setOnAction(new EventHandler<ActionEvent>() {
+        okButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 ExampleDialog.this.close();
             }
         });
 
-        cancelButton.setOnAction(new EventHandler<ActionEvent>() {
+        cancelButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent event) {
                 ExampleDialog.this.close();
