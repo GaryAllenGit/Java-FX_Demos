@@ -8,6 +8,12 @@ Projects named FXML_xxx were created using scene builder to generate fxml files.
 
 Projects named JavaFX_xxx are written 'long hand' coding with the Java FX classes.
 
+NOTE that since Java 1.9 it is now necessary to both:
+
+    import the JavaFX libraries.  At the university this means importing /usr/local/javafx/lib
+    edit the run configuration of each program to pass the following VM arguments:  
+        --module-path /usr/local/javafx-sdk-11.0.2/lib --add-modules=javafx.controls,javafx.fxml
+        (edit the above path as required)
 
 Currently there is:
 
